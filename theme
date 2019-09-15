@@ -105,6 +105,7 @@ echo -e $B"        [$G"86"$B]$Y tomorrow-night"
 echo -e $B"        [$G"87"$B]$Y white-on-black"
 echo -e $B"        [$G"88"$B]$Y wild-cherry"
 echo -e $B"        [$G"89"$B]$Y zenburn"
+echo -e $B"        [$G"90"$B]$Y dotshare"
 echo
 echo -ne $C"    [Choose Color Scheme You Want To Apply]: "
 read cs 
@@ -1082,6 +1083,17 @@ then
 echo
 echo -e $C"    $APLC"
 cp $CDIR/zenburn.config $TDIR/config
+$REL > /dev/null
+echo -e $G"    $RES"
+echo -e $Y"    $APLD"
+echo
+exit
+
+elif [[ $cs == "90" ]];
+then
+echo
+echo -e $C"    $APLC"
+cp $CDIR/dotshare.config $TDIR/config
 $REL > /dev/null
 echo -e $G"    $RES"
 echo -e $Y"    $APLD"
